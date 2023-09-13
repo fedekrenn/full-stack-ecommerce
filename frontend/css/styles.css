@@ -61,3 +61,7 @@ main {
     background: #03244e;
     transition: .5s;
 }
+
+.logo-tienda{
+    width: 100px;
+}
