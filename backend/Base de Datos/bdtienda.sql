@@ -33,7 +33,7 @@ CREATE TABLE `compra` (
   KEY `email_idx` (`email`),
   KEY `id_modo_pago_idx` (`id_modo_pago`),
   KEY `nro_cuenta_idx` (`nro_cuenta`),
-  CONSTRAINT `email` FOREIGN KEY (`email`) REFERENCES `uruario` (`email`),
+  CONSTRAINT `email` FOREIGN KEY (`email`) REFERENCES `usuario` (`email`),
   CONSTRAINT `id_modo_pago` FOREIGN KEY (`id_modo_pago`) REFERENCES `tipo_modo_pago` (`id_modo_pago`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -427,13 +427,13 @@ INSERT INTO `tipo_rol` VALUES (1,'Administrador'),(2,'Cliente');
 UNLOCK TABLES;
 
 --
--- Table structure for table `uruario`
+-- Table structure for table `usuario`
 --
 
-DROP TABLE IF EXISTS `uruario`;
+DROP TABLE IF EXISTS `usuario`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `uruario` (
+CREATE TABLE `usuario` (
   `email` varchar(50) NOT NULL,
   `id_tipo_documento` int NOT NULL,
   `nro_documento` varchar(20) NOT NULL,
@@ -456,12 +456,12 @@ CREATE TABLE `uruario` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `uruario`
+-- Dumping data for table `usuario`
 --
 
-LOCK TABLES `uruario` WRITE;
-/*!40000 ALTER TABLE `uruario` DISABLE KEYS */;
-/*!40000 ALTER TABLE `uruario` ENABLE KEYS */;
+LOCK TABLES `usuario` WRITE;
+/*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
+/*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -473,4 +473,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-09-09  9:42:23
+-- Dump completed on 2023-09-10  9:23:22
