@@ -87,8 +87,8 @@ footer ul {
     border-color: #3866a3;
     font-weight: bold;
     border-radius: 20px;
-    box-shadow: inset 0px 1px 0px 0px #bee2f9;
-    text-shadow: inset 0px 1px 0px #7cacde;
+    box-shadow: 0px 1px 0px 0px #bee2f9;
+    text-shadow: 0px 1px 0px #7cacde;
     background: linear-gradient(#63b8ee, #468ccf);
     text-decoration: none;
 }
