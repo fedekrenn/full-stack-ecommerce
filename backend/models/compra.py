@@ -1,22 +1,17 @@
 class Compra:
-	n_compra = 0
-	fecha = ""
-	cliente = ""
-	productos = []
-	total = ""
-
-	def __init__(self, n_compra, fecha, cliente, productos, total):
-		self.n_compra = n_compra
+	def __init__(self, nro_factura, fecha, cliente, productos, total):
+		self.nro_factura = nro_factura
 		self.fecha = fecha
 		self.cliente = cliente
 		self.productos = productos
 		self.total = total
+		self.cantidad_productos = len(productos)
 
-	def get_n_compra(self):
-		return self.n_compra
+	def get_nro_factura(self):
+		return self.nro_factura
 
-	def set_n_compra(self, n_compra):
-		self.n_compra = n_compra
+	def set_nro_factura(self, nro_factura):
+		self.nro_factura = nro_factura
 	
 	def get_fecha(self):
 		return self.fecha
@@ -33,8 +28,8 @@ class Compra:
 	def get_productos(self):
 		return self.productos
 
-	def set_productos(self, productos):
-		self.productos = productos
+	def set_productos(self, producto):
+		self.productos.append(producto)
 
 	def get_total(self):
 		return self.total
