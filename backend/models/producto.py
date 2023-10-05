@@ -1,14 +1,6 @@
 class Producto:
-	n_producto = 0
-	marca = ""
-	rodado = ""
-	precio = ""
-	color = ""
-	estilo = ""
-	material = ""
-
-	def __init__(self, n_producto, marca, rodado, precio, color, estilo, material):
-		self.n_producto = n_producto
+	def __init__(self, stock, marca, rodado, precio, color, estilo, material):
+		self.stock = stock
 		self.marca = marca
 		self.rodado = rodado
 		self.precio = precio
@@ -16,11 +8,11 @@ class Producto:
 		self.estilo = estilo
 		self.material = material
 
-	def get_n_producto(self):
-		return self.n_producto
+	def get_stock(self):
+		return self.stock
 
-	def set_n_producto(self, n_producto):
-		self.n_producto = n_producto
+	def set_stock(self, stock):
+		self.stock = stock
 
 	def get_marca(self):
 		return self.marca
@@ -56,4 +48,4 @@ class Producto:
 		return self.material
 
 	def set_material(self, material):
-		self.material = material
+		self.material = material	
