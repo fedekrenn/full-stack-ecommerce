@@ -7,7 +7,7 @@ function ValidarUsuario(){
             else {alert("Contraseña incorrecta")}   
             }
         else {
-            alert("Corrreo electrónico incorrecto")
+            alert("Correo electrónico incorrecto")
             }
     }
 }
