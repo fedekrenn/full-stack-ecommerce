@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS compra (
   `id_compra` INT NOT NULL AUTO_INCREMENT,
   `nro_factura` INT NOT NULL,
   `fecha` DATE NOT NULL,
-  `numero_cuenta` INT NOT NULL,
+  `nro_cuenta` INT NOT NULL,
   `total` FLOAT NOT NULL,
   `email` VARCHAR(50) NOT NULL,
   `id_modo_pago` INT NOT NULL,
