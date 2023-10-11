@@ -10,6 +10,7 @@ function validarUsuario() {
     if (contador < 3) {
       if (email.value == "ivana@gmail.com") {
         if (password.value == "123") {
+          alert ("Bienvenida "  + email.value)
           window.location.href = "../index.html";
         } else {
           alert("Contraseña incorrecta");

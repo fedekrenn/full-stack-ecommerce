@@ -1,6 +1,6 @@
-DROP SCHEMA IF EXISTS bdtienda ;
-CREATE SCHEMA IF NOT EXISTS bdtienda;
-USE bdtienda;
+DROP SCHEMA IF EXISTS b4hqvyrabbgsxhnfuakw ;
+CREATE SCHEMA IF NOT EXISTS b4hqvyrabbgsxhnfuakw;
+USE b4hqvyrabbgsxhnfuakw;
 
 -- -----------------------------------------------------
 -- Tabla tipo_rol
@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS usuario (
   INDEX `id_rol_idx` (`id_rol` ASC),
   CONSTRAINT `id_rol`
     FOREIGN KEY (`id_rol`)
-    REFERENCES `bdtienda`.`tipo_rol` (`id_rol`))
+    REFERENCES `b4hqvyrabbgsxhnfuakw`.`tipo_rol` (`id_rol`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_general_ci;
@@ -66,10 +66,10 @@ CREATE TABLE IF NOT EXISTS compra (
   INDEX `nro_cuenta_idx` (`nro_factura` ASC),
   CONSTRAINT `email`
     FOREIGN KEY (`email`)
-    REFERENCES `bdtienda`.`usuario` (`email`),
+    REFERENCES `b4hqvyrabbgsxhnfuakw`.`usuario` (`email`),
   CONSTRAINT `id_modo_pago`
     FOREIGN KEY (`id_modo_pago`)
-    REFERENCES `bdtienda`.`tipo_modo_pago` (`id_modo_pago`))
+    REFERENCES `b4hqvyrabbgsxhnfuakw`.`tipo_modo_pago` (`id_modo_pago`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_general_ci;
@@ -163,19 +163,19 @@ CREATE TABLE IF NOT EXISTS producto (
   INDEX `id_color_idx` (`id_color` ASC),
   CONSTRAINT `id_color`
     FOREIGN KEY (`id_color`)
-    REFERENCES `bdtienda`.`tipo_color` (`id_color`),
+    REFERENCES `b4hqvyrabbgsxhnfuakw`.`tipo_color` (`id_color`),
   CONSTRAINT `id_estilo`
     FOREIGN KEY (`id_estilo`)
-    REFERENCES `bdtienda`.`tipo_estilo` (`id_estilo`),
+    REFERENCES `b4hqvyrabbgsxhnfuakw`.`tipo_estilo` (`id_estilo`),
   CONSTRAINT `id_marca`
     FOREIGN KEY (`id_marca`)
-    REFERENCES `bdtienda`.`tipo_marca` (`id_marca`),
+    REFERENCES `b4hqvyrabbgsxhnfuakw`.`tipo_marca` (`id_marca`),
   CONSTRAINT `id_material`
     FOREIGN KEY (`id_material`)
-    REFERENCES `bdtienda`.`tipo_material` (`id_material`),
+    REFERENCES `b4hqvyrabbgsxhnfuakw`.`tipo_material` (`id_material`),
   CONSTRAINT `id_rodado`
     FOREIGN KEY (`id_rodado`)
-    REFERENCES `bdtienda`.`tipo_rodado` (`id_rodado`))
+    REFERENCES `b4hqvyrabbgsxhnfuakw`.`tipo_rodado` (`id_rodado`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8mb4
@@ -196,10 +196,10 @@ CREATE TABLE IF NOT EXISTS detalle_compra (
   INDEX `id_producto_idx` (`id_producto` ASC),
   CONSTRAINT `id_compra`
     FOREIGN KEY (`id_compra`)
-    REFERENCES `bdtienda`.`compra` (`id_compra`),
+    REFERENCES `b4hqvyrabbgsxhnfuakw`.`compra` (`id_compra`),
   CONSTRAINT `id_producto`
     FOREIGN KEY (`id_producto`)
-    REFERENCES `bdtienda`.`producto` (`id_producto`))
+    REFERENCES `b4hqvyrabbgsxhnfuakw`.`producto` (`id_producto`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_general_ci;
@@ -233,10 +233,10 @@ CREATE TABLE IF NOT EXISTS entrega (
   INDEX `estado_entrega_idx` (`id_estado_entrega` ASC),
   CONSTRAINT `compra`
     FOREIGN KEY (`id_compra`)
-    REFERENCES `bdtienda`.`compra` (`id_compra`),
+    REFERENCES `b4hqvyrabbgsxhnfuakw`.`compra` (`id_compra`),
   CONSTRAINT `estado_entrega`
     FOREIGN KEY (`id_estado_entrega`)
-    REFERENCES `bdtienda`.`tipo_estado_entrega` (`id_estado_entrega`))
+    REFERENCES `b4hqvyrabbgsxhnfuakw`.`tipo_estado_entrega` (`id_estado_entrega`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_general_ci;
