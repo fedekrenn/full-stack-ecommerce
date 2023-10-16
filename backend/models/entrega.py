@@ -1,44 +1,37 @@
 class Entrega:
-	def __init__(self, compra, domicilio, fecha, telefono_contacto, receptor):
-		self.compra = compra
-		self.domicilio = domicilio
-		self.fecha = fecha
-		self.telefono_contacto = telefono_contacto
-		self.receptor = receptor
-		self.estado = 1 #1:'En preparación', 2: 'Despachado', 3:'Entregado'
+    def __init__(self, nro_seguimiento, domicilio_entrega, observaciones, compra):
+        self.nro_seguimiento = nro_seguimiento
+        self.domicilio_entrega = domicilio_entrega
+        self.observaciones = observaciones
+        self.compra = compra
+        self.estado_entrega: 1  # 1:'En preparación', 2: 'Despachado', 3:'Entregado'
 
-	def get_compra(self):
-		return self.compra
+    def get_nro_seguimiento(self):
+        return self.nro_seguimiento
 
-	def set_compra(self, compra):
-		self.compra = compra
+    def set_nro_seguimiento(self, nro_seguimiento):
+        self.nro_seguimiento = nro_seguimiento
 
-	def get_domicilio(self):
-		return self.domicilio
-	
-	def set_domicilio(self, domicilio):
-		self.domicilio = domicilio
+    def get_domicilio_entrega(self):
+        return self.domicilio_entrega
 
-	def get_fecha(self):
-		return self.fecha
+    def set_domicilio_entrega(self, domicilio_entrega):
+        self.domicilio_entrega = domicilio_entrega
 
-	def set_fecha(self, fecha):
-		self.fecha = fecha
+    def get_observaciones(self):
+        return self.observaciones
 
-	def get_telefono_contacto(self):
-		return self.telefono_contacto
+    def set_observaciones(self, observaciones):
+        self.observaciones = observaciones
 
-	def set_telefono_contacto(self, telefono_contacto):
-		self.telefono_contacto = telefono_contacto
+    def get_compra(self):
+        return self.compra
 
-	def get_receptor(self):
-		return self.receptor
+    def set_compra(self, compra):
+        self.compra = compra
 
-	def set_receptor(self, receptor):
-		self.receptor = receptor
+    def get_estado_entrega(self):
+        return self.estado_entrega
 
-	def get_estado(self):
-		return self.estado
-
-	def set_estado(self, estado):
-		self.estado = estado
+    def set_estado_entrega(self, estado_entrega):
+        self.estado_entrega = estado_entrega
