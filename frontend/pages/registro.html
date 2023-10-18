@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Registrate como nuevo usuario en Tienda Full para iniciar sesion.">
     <link rel="shortcut icon" href="../assets/icons/favicon.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Tienda Full | Login</title>
+    <title>Tienda Full | Registro</title>
 </head>
-
 <body>
     <header>
         <nav class="navbar navbar-expand-md bg-body-tertiary" data-bs-theme="dark">
@@ -48,19 +45,20 @@
                 <div class="text-center">
                     <h3 class="fw-bold">Registro de nuevo usuario</h3>
                 </div>
-                
-                <form class="row needs-validation">
+
+                <form id="form" class="row needs-validation">
                     <div class="col-md-8">
                         <div class="mb-2">
                             <label for="email" class="form-label">Email:</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="joseh@gmail.com" maxlength="50" required>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="joseh@gmail.com" maxlength="50" required>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="mb-2">
                             <label for="tel" class="form-label">Teléfono:</label>
-                            <input type="tel" class="form-control" id="tel" name="tel" required 
-                            pattern="^[0-9]{10}$" placeholder="3511234567">
+                            <input type="tel" class="form-control" id="tel" name="tel" required pattern="^[0-9]{10}$"
+                                placeholder="3511234567">
                         </div>
                     </div>
                     <div class="col-6">
@@ -78,29 +76,32 @@
                     <div class="col-md-6">
                         <div class="mb-2">
                             <label for="nombre" class="form-label">Nombre:</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Jose" maxlength="50" required>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Jose"
+                                maxlength="50" required>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="mb-2">
                             <label for="apellido" class="form-label">Apellido:</label>
-                            <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Hernandez" maxlength="45" required>
+                            <input type="text" class="form-control" id="apellido" name="apellido"
+                                placeholder="Hernandez" maxlength="45" required>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="mb-2">
                             <label for="provincia" class="form-label">Provincia:</label>
-                            <select name="provincia" id="prov" required>
-                                <option value="" selected></option>
+                            <select name="provincia" id="provincia" required>
+                                <option value="" disabled selected>Seleccionar</option>
                                 <option value="Córdoba">Córdoba</option>
+                                <option value="Buenos Aires">Buenos Aires</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="mb-2">
                             <label for="departamento" class="form-label">Departamento:</label>
-                            <select name="departamento" id="deptos" required>
-                                <option value="" selected></option>
+                            <select name="departamento" id="departamento" required>
+                                <option value="" disabled selected>Seleccionar</option>
                                 <option value="Capital">Capital</option>
                                 <option value="Unión">Unión</option>
                                 <option value="Marcos Juárez">Marcos Juárez</option>
@@ -110,17 +111,18 @@
                     <div class="col-md-4">
                         <div class="mb-2">
                             <label for="localidad" class="form-label">Localidad:</label>
-                            <select name="localidad" id="loc" required>
-                                <option value="" selected></option>
+                            <select name="localidad" id="localidad" required>
+                                <option value="" disabled selected>Seleccionar</option>
                                 <option value="Córdoba">Córdoba</option>
                                 <option value="Bell Ville">Bell Ville</option>
                                 <option value="Inriville">Inriville</option>
                             </select>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="d-grid">
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
+                    <span>Si ya tienes cuenta, <a href="./login.html"> Logueate</a></span> <br>
                 </form>
             </div>
         </div>
@@ -149,4 +151,5 @@
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
