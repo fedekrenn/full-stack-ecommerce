@@ -79,7 +79,9 @@ class ProductoDao:
 
     def eliminar_producto(self, id_producto):
         try:
-            self.cursor.execute(f"DELETE FROM producto WHERE id_producto = {id_producto}")
+            self.cursor.execute(
+                f"DELETE FROM producto WHERE id_producto = {id_producto}"
+            )
             self.db.commit()
             return "Producto eliminado correctamente"
         except Exception as Error:

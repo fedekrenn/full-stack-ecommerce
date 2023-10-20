@@ -3,7 +3,10 @@ from data_access.producto import *
 
 dao = ProductoDao(dbdata)
 
-print(dao.obtener_todos_productos())
+for producto in dao.obtener_todos_productos():
+    print('-------------------')
+    print(producto)
+    print('-------------------')
 
 producto_prueba = Producto('Bicicleta de prueba', 15000, 10, 'bicicleta_prueba.jpg', 'Bicicleta de prueba', 1, 1, 1, 1, 1)
 
@@ -23,4 +26,4 @@ producto_error = {
     'material': 1,
     'color': 1
 }
-print(dao.crear_producto(producto_error))
+# print(dao.crear_producto(producto_error))
