@@ -23,7 +23,7 @@ class ProductoDao:
     def obtener_todos_productos(self):
         try:
             self.cursor.execute(
-                f"SELECT id_producto, modelo, precio, stock, imagen, detalle, tipo_marca.descripcion AS marca, tipo_estilo.descripcion AS estilo, tipo_material.descripcion AS material, tipo_color.descripcion AS color FROM producto JOIN tipo_marca ON producto.id_marca = tipo_marca.id_marca JOIN tipo_estilo ON producto.id_estilo = tipo_estilo.id_estilo JOIN tipo_material ON producto.id_material = tipo_material.id_material JOIN tipo_color ON producto.id_color = tipo_color.id_color"
+                f"SELECT id_producto, modelo, precio, stock, imagen, detalle, tipo_marca.descripcion AS marca, tipo_estilo.descripcion AS estilo, tipo_material.descripcion AS material, tipo_color.descripcion AS color FROM producto JOIN tipo_marca ON producto.id_marca = tipo_marca.id_marca JOIN tipo_estilo ON producto.id_estilo = tipo_estilo.id_estilo JOIN tipo_material ON producto.id_material = tipo_material.id_material JOIN tipo_color ON producto.id_color = tipo_color.id_color ORDER BY id_producto"
             )
             result = self.cursor.fetchall()
             if len(result) == 0:
