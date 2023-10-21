@@ -1,59 +1,72 @@
 class Producto:
-	n_producto = 0
-	marca = ""
-	rodado = ""
-	precio = ""
-	color = ""
-	estilo = ""
-	material = ""
+    def __init__(self, modelo, precio, stock, imagen, detalle, marca, rodado, estilo, material, color):
+        self.modelo = modelo
+        self.precio = precio
+        self.stock = stock
+        self.imagen = imagen
+        self.detalle = detalle
+        self.marca = marca
+        self.rodado = rodado
+        self.estilo = estilo
+        self.material = material
+        self.color = color
 
-	def __init__(self, n_producto, marca, rodado, precio, color, estilo, material):
-		self.n_producto = n_producto
-		self.marca = marca
-		self.rodado = rodado
-		self.precio = precio
-		self.color = color
-		self.estilo = estilo
-		self.material = material
+    def get_modelo(self):
+        return self.modelo
 
-	def get_n_producto(self):
-		return self.n_producto
+    def set_modelo(self, modelo):
+        self.modelo = modelo
 
-	def set_n_producto(self, n_producto):
-		self.n_producto = n_producto
+    def get_precio(self):
+        return self.precio
 
-	def get_marca(self):
-		return self.marca
+    def set_precio(self, precio):
+        self.precio = precio
 
-	def set_marca(self, marca):
-		self.marca = marca
+    def get_stock(self):
+        return self.stock
 
-	def get_rodado(self):
-		return self.rodado
+    def set_stock(self, stock):
+        self.stock = stock
 
-	def set_rodado(self, rodado):
-		self.rodado = rodado
+    def get_imagen(self):
+        return self.imagen
 
-	def get_precio(self):
-		return self.precio
+    def set_imagen(self, imagen):
+        self.imagen = imagen
 
-	def set_precio(self, precio):
-		self.precio = precio
+    def get_detalle(self):
+        return self.detalle
 
-	def get_color(self):
-		return self.color
+    def set_detalle(self, detalle):
+        self.detalle = detalle
 
-	def set_color(self, color):
-		self.color = color
+    def get_marca(self):
+        return self.marca
 
-	def get_estilo(self):
-		return self.estilo
+    def set_marca(self, marca):
+        self.marca = marca
 
-	def set_estilo(self, estilo):
-		self.estilo = estilo
+    def get_rodado(self):
+        return self.rodado
 
-	def get_material(self):
-		return self.material
+    def set_rodado(self, rodado):
+        self.rodado = rodado
 
-	def set_material(self, material):
-		self.material = material
+    def get_estilo(self):
+        return self.estilo
+
+    def set_estilo(self, estilo):
+        self.estilo = estilo
+
+    def get_material(self):
+        return self.material
+
+    def set_material(self, material):
+        self.material = material
+
+    def get_color(self):
+        return self.color
+
+    def set_color(self, color):
+        self.color = color

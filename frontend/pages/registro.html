@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Registrate como nuevo usuario en Tienda Full para iniciar sesion.">
+    <link rel="shortcut icon" href="../assets/icons/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Tienda Full | Registro</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo-tienda" src="../assets/images/logo-tienda.png" alt="Logo tienda">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./acerca-de-nosotros.html">Acerca de nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./login.html">Iniciar sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="row justify-content-center">
+        <div class="container my-3">
+            <div class="row align-items">
+                <div class="row justify-content-end">
+                    <img class="logo-login" src="../assets/images/logo-tienda.png" alt="Logo">
+                </div>
+                <div class="text-center">
+                    <h3 class="fw-bold">Registro de nuevo usuario</h3>
+                </div>
+
+                <form id="form" class="row needs-validation">
+                    <div class="col-md-8">
+                        <div class="mb-2">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="joseh@gmail.com" maxlength="50" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-2">
+                            <label for="tel" class="form-label">Teléfono:</label>
+                            <input type="tel" class="form-control" id="tel" name="tel" required pattern="^[0-9]{10}$"
+                                placeholder="3511234567">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="mb-2">
+                            <label for="pass1" class="form-label">Contraseña:</label>
+                            <input type="password" class="form-control" id="pass1" name="pass1" maxlength="20" required>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="mb-2">
+                            <label for="pass2" class="form-label">Repetir contraseña:</label>
+                            <input type="password" class="form-control" id="pass2" name="pass2" maxlength="20" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-2">
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Jose"
+                                maxlength="50" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-2">
+                            <label for="apellido" class="form-label">Apellido:</label>
+                            <input type="text" class="form-control" id="apellido" name="apellido"
+                                placeholder="Hernandez" maxlength="45" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-2">
+                            <label for="provincia" class="form-label">Provincia:</label>
+                            <select name="provincia" id="provincia" required>
+                                <option value="" disabled selected>Seleccionar</option>
+                                <option value="Córdoba">Córdoba</option>
+                                <option value="Buenos Aires">Buenos Aires</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-2">
+                            <label for="departamento" class="form-label">Departamento:</label>
+                            <select name="departamento" id="departamento" required>
+                                <option value="" disabled selected>Seleccionar</option>
+                                <option value="Capital">Capital</option>
+                                <option value="Unión">Unión</option>
+                                <option value="Marcos Juárez">Marcos Juárez</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-2">
+                            <label for="localidad" class="form-label">Localidad:</label>
+                            <select name="localidad" id="localidad" required>
+                                <option value="" disabled selected>Seleccionar</option>
+                                <option value="Córdoba">Córdoba</option>
+                                <option value="Bell Ville">Bell Ville</option>
+                                <option value="Inriville">Inriville</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                    <span>Si ya tienes cuenta, <a href="./login.html"> Logueate</a></span> <br>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="contact-info">
+        <p>¡Síguenos en redes sociales!</p>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+        </ul>
+        <p>Teléfono: +54 (351) 456-7890</p>
+    </footer>
+    <!-- JavaScript -->
+    <script src="../js/registro.js"></script>
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/94c0117dd6.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
