@@ -209,6 +209,12 @@ footer ul {
     margin: 10px;
 }
 
+.register-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .contact-form {
     margin-top: 20px;
 }
