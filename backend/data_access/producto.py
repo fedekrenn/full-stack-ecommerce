@@ -86,3 +86,6 @@ class ProductoDao:
             return "Producto eliminado correctamente"
         except Exception as Error:
             print(f"Ocurrió un error: {Error}")
+
+    def cerrar_conexion(self):
+        self.db.close()
