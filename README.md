@@ -1,15 +1,6 @@
 # 🚴‍♀️ Proyecto Integrador - Tienda Full
 
-Proyecto grupal para el módulo "Programador Full Stack" de la tecnicatura en desarrollo web y aplicaciones digitales del ISPC . Está compuesto por tres espacios curriculares: Introducción a la Programación Web I, Programación I y Proyecto Integrador.
-
-## 👩‍👩‍👦‍👦 Integrantes 
-
-- Ancillotti Lautaro | [GitHub](https://github.com/lnancillotti)
-- Barletta Fernando | [GitHub](https://github.com/Ferbarletta)
-- Blasiche Andrés | [GitHub](https://github.com/blasichea)
-- Castillo Fernanda | [GitHub](https://github.com/FernandaACastillo)
-- Krenn Federico Nicolás | [GitHub](https://github.com/fedekrenn)
-- Germán Emanuel Liendo | [GitHub](https://github.com/g3rm6nI)
+Fork del proyecto grupal para el módulo "Programador Full Stack" de la tecnicatura en desarrollo web y aplicaciones digitales del ISPC . Está compuesto por tres espacios curriculares: Introducción a la Programación Web I, Programación I y Proyecto Integrador.
 
 ## 💻 Descripción del proyecto 
 
